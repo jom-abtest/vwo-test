@@ -19,12 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
     ReactDOM.preconnect('https://dev.visualwebsiteoptimizer.com');
-    const accountId = process.env.VWO_ACCOUNT_ID;
   return (
     <html lang="en">
     <Script type='text/javascript' id='vwoCode' strategy='beforeInteractive'>{`
             window._vwo_code || (function () {
-            var account_id=${accountId},
+            var account_id=865640,
             version=2.1,
             settings_tolerance=2000,
             hide_element='body',
